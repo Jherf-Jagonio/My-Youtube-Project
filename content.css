@@ -1,0 +1,101 @@
+ .main-container{
+        display: flex;
+        flex-direction: column;
+        height: 400px;
+        width: 455px;
+        box-shadow: 1px 5px 15px RGB(211,211,211,.7);
+        flex-shrink: 0;
+    }
+    .horizontal-container1{
+        position: relative;
+    }
+    .time-manage{
+        position:absolute;
+        bottom: 20px;
+        right: 15px;
+        background-color: rgb(23, 20, 20);
+        color: white;
+        white-space: nowrap;
+        padding: 3px 6px 3px 6px;
+        border-radius: 5px;
+        font-weight: 700;
+    }
+    .video-preview{
+        height: 256px;
+        width: 455px;
+    }
+    .horizontal-container2{
+        display: flex;
+        position: relative;
+
+    }
+    .entities-3dots{
+        position: absolute;
+        top: 5px;
+        right: 5px;
+        font-weight: 700;
+        font-size: 26px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 40px;
+        width: 40px;
+        border-radius: 20px;
+
+    }
+    .entities-3dots:hover{
+        background-color: rgb(201, 180, 180);
+
+    }
+    .author{
+        height: 46px;
+        width: 46px;
+        border-radius: 23px;
+        margin: 10px 20px 0 20px;
+    }
+    .vertical-container2{
+        
+        display: flex;
+        flex-direction: column;
+        width: 300px;
+        margin: 10px 0 0px 0;
+    }
+    .title{
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 25px;
+        margin: 0px 0 10px 0;
+    }
+    .content-creator, .views{
+        font-weight: 400;
+        color: rgb(201, 180, 180);
+        font-size: 15px;
+        line-height: 20px;
+    }
+    .grid-container{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        width: 1000px;
+        column-gap: 0;
+        row-gap: 30px;
+    }
+
+    @media (max-width: 600px) {
+        .grid-container{
+        display: grid;
+        grid-template-columns: 1fr;
+        width: 456px;
+        column-gap: 40px;
+        row-gap: 40px;
+    }
+    }
+
+    @media (min-width: 1200px) {
+        .grid-container{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        width: 1000px;
+        column-gap: 20px;
+        row-gap: 25px;
+    }
+    }
